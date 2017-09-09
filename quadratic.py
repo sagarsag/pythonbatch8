@@ -1,3 +1,4 @@
+import cmath
 import math
 def roots(a,b,c,d):
     global r1,r2
@@ -6,13 +7,13 @@ def roots(a,b,c,d):
       r2=(-b)/(2*a)
       return print('the roots are equal and real \n r1={0} r2={1}'.format(r1,r2))
     elif(d>0):
-      r1=(-b+math.sqrt(d))/2*a
-      r2=(-b-math.sqrt(d))/2*a
+      r1=(-b+cmath.sqrt(d))/2*a
+      r2=(-b-cmath.sqrt(d))/2*a
       return print('the roots are real and distinct\n r1={0} r2={1}'.format(r1,r2))
     else:
-      r1=-b/2*a
-      r2=math.sqrt(-d)/2*a
-      return print('the roots are complex\n r1={0}+i{1} r2={1}-i{2}'.format(r1,r2,r1,r2)) 
+      r1=(-b+cmath.sqrt(d))/2*a
+      r2=(-b-cmath.sqrt(d))/2*a
+      return print('the roots are complex\n r1={0} r2={1}'.format(r1,r2,r1,r2)) 
 def read():
     return float(input('enter coefficients\n')) 
 a=read(); 
