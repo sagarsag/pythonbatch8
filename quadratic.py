@@ -1,5 +1,4 @@
 import cmath
-import math
 def roots(a,b,c,d):
     global r1,r2
     if(d==0):
@@ -15,7 +14,8 @@ def roots(a,b,c,d):
       r2=(-b-cmath.sqrt(d))/2*a
       return print('the roots are complex\n r1={0} r2={1}'.format(r1,r2,r1,r2)) 
 def read():
-    return float(input('enter coefficients\n')) 
+    return float(input()) 
+print('enter coefficients of quadratic equatin  from higer order')
 a=read(); 
 b=read(); 
 c=read(); 
