@@ -12,7 +12,7 @@ def roots(a,b,c,d):
     else:
       r1=(-b+cmath.sqrt(d))/2*a
       r2=(-b-cmath.sqrt(d))/2*a
-      return print('the roots are complex\n r1={0} r2={1}'.format(r1,r2,r1,r2)) 
+      return print('the roots are complex\n r1={0} r2={1}'.format(r1,r2)) 
 def read():
     return float(input()) 
 print('enter coefficients of quadratic equatin  from higer order')
