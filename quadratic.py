@@ -5,10 +5,6 @@ def roots(a,b,c,d):
       r1=(-b)/(2*a)
       r2=(-b)/(2*a)
       return r1,r2 #print('the roots are equal and real \n r1={0} r2={1}'.format(r1,r2))
-    elif(d>0):
-      r1=(-b+cmath.sqrt(d))/2*a
-      r2=(-b-cmath.sqrt(d))/2*a
-      return r1,r2 #print('the roots are real and distinct\n r1={0} r2={1}'.format(r1,r2))
     else:
       r1=(-b+cmath.sqrt(d))/2*a
       r2=(-b-cmath.sqrt(d))/2*a
