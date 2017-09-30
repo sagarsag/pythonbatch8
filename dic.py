@@ -1,13 +1,14 @@
 def read():
   return int(input())
-def  readstring():
-  return input()
-def compute():
+def compute(text):
   for i in range(n):
-    text=(readstring().split('='))
+    #text=(readstring().split('='))
     d[text[0]]=text[1]
   return d
 n=read()
 d={}
-d=compute()
+t=[]
+for i in range(n):
+  text=list(input().split('='))
+  d=compute(text)
 print(d)
