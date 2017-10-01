@@ -8,6 +8,6 @@ def compute(text,n,d):
 n=read()
 d={}
 for i in range(n):
-  text=str(input())
+  text=(input())
   d=compute(text,n,d)
 print(d)
