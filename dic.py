@@ -2,11 +2,12 @@ def read():
   return int(input())
 def compute(text,n,d):
   for i in range(n):
-    d[text[0]]=text[1]
+    t=(text.split('='))
+    d[t[0]]=t[1]
   return d
 n=read()
 d={}
 for i in range(n):
-  text=list(input().split('='))
+  text=str(input())
   d=compute(text,n,d)
 print(d)
